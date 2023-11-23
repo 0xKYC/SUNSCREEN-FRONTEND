@@ -32,12 +32,12 @@ export default function Homepage() {
           <Hero />
           {/* <Partners />
           <BackedBy /> */}
-          {/* <Newsletter title="Join our newsletter to learn about our exciting updates">
+          <Newsletter title="Join our newsletter to learn about our exciting updates">
             <p>
               We offer the most private Proof of Personhood and a Discord Bot. We are partners of Onfido, and are provisional patent pending
               for our onchain attestation technology.
             </p>
-          </Newsletter> */}
+          </Newsletter>
           {/* <BasicSection
             imageUrl="/github.gif"
             href="https://docs.0xkyc.id/"
