@@ -25,7 +25,7 @@ export const NewsletterBox = () => {
     }
     try {
       setIsLoading(true);
-      await axios.post(`/newsletter-signup`, {
+      await axios.post(`/api/newsletter-signup`, {
         email,
       });
       setIsLoading(false);
