@@ -60,7 +60,7 @@ const ImageContainer = styled.div`
 const HeroWrapper = styled(Container)`
   display: flex;
   padding-top: 5rem;
-  padding-bottom: 15rem;
+  padding-bottom: 10rem;
   ${media('<=desktop')} {
     padding-top: 1rem;
     flex-direction: column;
