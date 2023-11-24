@@ -1,25 +1,15 @@
 import Head from 'next/head';
 import styled from 'styled-components';
-import BasicSection, { Title } from 'components/BasicSection';
+import { Title } from 'components/BasicSection';
 
 import Container from 'components/Container';
-import Link, { Anchor } from 'components/Link';
-import { Separator } from 'components/Separator';
 import { EnvVars } from 'env';
 
-// import Cta from 'views/HomePage/Cta';
-import BackedBy from 'views/HomePage/BackedBy';
-import Partners from 'views/HomePage/BlockchainsBanner';
-import Blog from 'views/HomePage/BlogSection';
-import FaqSection from 'views/HomePage/FaqSection';
-import Features from 'views/HomePage/Features';
-import FeaturesGallery from 'views/HomePage/FeaturesGallery';
 import Hero from 'views/HomePage/Hero';
-import News from 'views/HomePage/News';
 import Newsletter from 'views/HomePage/Newsletter';
-// import Partners from 'views/HomePage/Partners';
-import { Pricing } from 'views/HomePage/Pricing';
-import Testimonials from 'views/HomePage/Testimonials';
+import Button from 'components/Button';
+import Cta from 'views/HomePage/Cta';
+import SectionTitle from 'components/SectionTitle';
 
 export default function Homepage() {
   return (
@@ -38,75 +28,17 @@ export default function Homepage() {
               for our onchain attestation technology.
             </p>
           </Newsletter>
-          {/* <BasicSection
-            imageUrl="/github.gif"
-            href="https://docs.0xkyc.id/"
-            title="Elevate your user verification game"
-            overTitle=""
-            reversed
-          >
-            <p>We are industry specialists building custom solutions for the most sophisticated clients:</p>
-            <ul>
-              <li>
-                <b>Onchain attestations for your Proof of Personhood</b>
-              </li>
-              <li>Uniqueness Verification ✅</li>
-              <li>Web3 fraud wallet lists check ✅</li>
-              <li>Real world sanctions verification ✅</li>
-              <li>Unique across different wallets and cross-chain 🌐</li>
-              <li>We also enable reusable solutions on the edge of what&apos;s possible.</li>
-            </ul>
-            <p>
-              All of our checks can be permissionless and are interoperable 🗻⛺ Backed by{' '}
-              <Anchor rel="noreferrer" target="_blank" href="https://www.neworder.network/">
-                New Order DAO
-              </Anchor>
-              ,{' '}
-              <Anchor rel="noreferrer" target="_blank" href="https://outlierventures.io/">
-                Outlier Ventures
-              </Anchor>{' '}
-              and{' '}
-              <Anchor rel="noreferrer" target="_blank" href="https://bufficorn.ventures/">
-                Bufficorn Ventures
-              </Anchor>{' '}
-              as well as angels. We are officially a part of the{' '}
-              <Anchor rel="noreferrer" target="_blank" href="https://scroll.io/ecosystem">
-                Scroll ecosystem 📜
-              </Anchor>
-            </p>
-          </BasicSection>
-          <Separator />
-          <News />
-          <Testimonials />
-          <Container style={{ textAlign: 'center', marginTop: '5rem' }} id="use-cases">
-            <Title style={{ textAlign: 'center' }}>0xKYC Use Cases</Title>
-            <Box>
-              <p>
-                We are building the most decentralized system for a Proof of Personhood. Our Discord bot, available via{' '}
-                <Anchor rel="noreferrer" target="_blank" href="https://app.0xkyc.id">
-                  https://app.0xkyc.id
-                </Anchor>{' '}
-                is currently in it&apos;s alpha phase with uniqueness verification as well as verification if you are a real person. Get rid
-                of users with duplicate accounts and enable fair giveaways, airdrops etc.
-              </p>
-              <p style={{ marginBottom: '5rem', marginTop: '1rem' }}>
-                We can enable your organizations 10x in user onboarding, enable new experiences via fair distribution of rewards, enhance
-                game experience (like in the example of Insert Stonks integration) and much more. We are a part of multiple working groups
-                and can assure you of our in-depth knowledge.
-              </p>
-            </Box>
-            <Features />
+
+          <Container style={{ textAlign: 'center', marginTop: '10rem' }}>
+            <SectionTitle style={{ margin: '4rem 0' }}>Protect your Discord Server</SectionTitle>
+            <Button
+              href="https://discord.com/api/oauth2/authorize?client_id=1169753823397556294&permissions=2415930416&scope=bot"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Add To Discord<span>&rarr;</span>
+            </Button>
           </Container>
-          <Separator />
-          <FeaturesGallery />
-          <Separator />
-          <Blog />
-          <Separator />
-          <Pricing />
-          <Separator />
-         */}
-          {/* <FaqSection /> */}
-          <Blog />
         </WhiteBackgroundContainer>
         {/* <DarkerBackgroundContainer> */}
         {/* <Cta /> */}

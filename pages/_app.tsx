@@ -20,7 +20,7 @@ import { NavItems } from 'types';
 import '@splidejs/splide/dist/css/splide.min.css';
 
 const navItems: NavItems = [
-  { title: 'News', href: '/news', redirect: true },
+  { title: 'News', href: 'https://0xkyc.id/news' },
   // { title: 'Use Cases', href: '#use-cases' },
   // { title: 'Integration', href: '#integration' },
   { title: 'Blog', href: 'https://medium.com/0xkyc' },
