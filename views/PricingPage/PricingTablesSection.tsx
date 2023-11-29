@@ -7,10 +7,10 @@ export default function PricingTablesSection() {
     <Wrapper>
       <SectionTitle>Pricing</SectionTitle>
       <br />
-      <Info>Our Discord Bot is currently free, but it will soon be $14.9 per month.</Info>
+      <Info>Our Discord Bot is currently free,</Info>
 
       <Info>
-        For full pricing visit{' '}
+        for full pricing visit{' '}
         <Anchor target="_blank" rel="noreferrer" href="https://0xkyc.id/pricing">
           0xkyc.id/pricing
         </Anchor>
@@ -20,9 +20,6 @@ export default function PricingTablesSection() {
   );
 }
 
-const Text = styled.span<{ isBold: boolean }>`
-  font-weight: ${(p) => (p.isBold ? 'bolder !important' : '200')};
-`;
 const Wrapper = styled.div`
   text-align: center;
   margin-top: 5rem;
