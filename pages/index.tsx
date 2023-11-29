@@ -10,6 +10,7 @@ import Newsletter from 'views/HomePage/Newsletter';
 import Button from 'components/Button';
 import Cta from 'views/HomePage/Cta';
 import SectionTitle from 'components/SectionTitle';
+import BackedBy from 'views/HomePage/BackedBy';
 
 export default function Homepage() {
   return (
@@ -20,8 +21,8 @@ export default function Homepage() {
       <HomepageWrapper>
         <WhiteBackgroundContainer>
           <Hero />
-          {/* <Partners />
-          <BackedBy /> */}
+          {/* <Partners /> */}
+          <BackedBy />
           <Newsletter title="Join our newsletter to learn about our exciting updates">
             <p>
               We offer the most private Proof of Personhood and a Discord Bot. We are partners of Onfido, and are provisional patent pending
@@ -74,7 +75,7 @@ const DarkerBackgroundContainer = styled.div`
 
 const WhiteBackgroundContainer = styled.div`
   background: rgb(var(--secondBackground));
-  padding-bottom: 5rem;
+  /* padding-bottom: 5rem; */
   /* & > *:not(:first-child) {
     margin-top: 15rem;
   } */
