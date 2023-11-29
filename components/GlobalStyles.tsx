@@ -35,16 +35,16 @@ export const GlobalStyle = createGlobalStyle`
   --logoColor: #243A5A;
 
   /// 
-    --background: 26,32,44;
-  --secondBackground: 45,55,72;
+  --background: 26,32,44;
+  --secondBackground: 18, 18, 18;
   --text: 237,237,238;
   --textSecondary: 255,255,255;
   --primary: 35,41,96;
-  --secondary: 10,18,30;
+  --secondary:10,18,30;
   --tertiary: 231,241,251;
   --cardBackground: 45,55,72;
   --inputBackground: 45,55,72;
-  --navbarBackground: 45,55,72;
+  --navbarBackground: 18, 18, 18;
   --modalBackground: 26,32,44;
   --errorColor: #ffa07a;
 --logoColor: #243A5A;
@@ -76,7 +76,7 @@ export const GlobalStyle = createGlobalStyle`
   --z-navbar: 8888;
   --z-drawer: 9999;
   --z-modal: 9999;
-  background-color: rgb(45,55,72);
+  background-color: rgb(18, 18, 18);
 }
 
 /* Box sizing rules */
