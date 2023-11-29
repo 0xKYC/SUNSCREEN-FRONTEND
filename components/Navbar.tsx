@@ -23,7 +23,7 @@ export default function Navbar({ items }: NavbarProps) {
       <Content>
         <NextLink href="/" passHref>
           <LogoWrapper>
-            <Image src="/sunscreen-black.png" alt="logo" width={220} height={80} objectFit="contain" />
+            <Image src="/sunscreen-white.png" alt="logo" width={220} height={80} objectFit="contain" />
           </LogoWrapper>
         </NextLink>
         <NextLink href="/" passHref>
@@ -57,7 +57,7 @@ export default function Navbar({ items }: NavbarProps) {
 
 function NavItem({ href, title, outlined }: SingleNavItem) {
   return (
-    <NavItemWrapper outlined={outlined}>
+    <NavItemWrapper outlined={outlined} title={title}>
       <Button href={href} target="_blank" rel="noreferrer">
         {title}
       </Button>
@@ -127,15 +127,16 @@ const NavItemWrapper = styled.li<Partial<SingleNavItem>>`
     position: absolute;
     bottom: 3px;
     left: 0;
-    height: 3px;
+    height: 2px;
     width: 100%;
-    background-color: rgb(var(--primary));
+    background-color: ${(p) => (p.title === 'Add to discord' ? '' : 'white')};
+    opacity: 0.9;
     transform-origin: right top;
     transform: scale(0, 1);
     transition: color 0.1s, transform 0.2s ease-out;
   }
   a:active::before {
-    background-color: rgb(var(--primary));
+    background-color: ${(p) => (p.title === 'Add to discord' ? '' : 'white')};
   }
   a:hover::before {
     transform-origin: left top;
@@ -166,7 +167,8 @@ const CustomNavItemWrapper = styled(NavItemWrapper)`
   }
 
   a {
-    color: black;
+    color: white;
+    opacity: 0.9;
   }
 `;
 const NavbarContainer = styled.div`

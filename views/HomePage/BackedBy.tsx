@@ -9,10 +9,10 @@ import { Title } from './BlockchainsBanner';
 const INVESTORS = [
   {
     name: 'New Order Dao',
-    img: 'new-order.png',
+    img: 'new-order-white.png',
     href: 'https://www.neworder.network/',
   },
-  { name: 'Outlier Ventures', img: 'outlier-ventures.png', href: 'https://outlierventures.io/' },
+  { name: 'Outlier Ventures', img: 'ov-whitee.webp', href: 'https://outlierventures.io/' },
   { name: 'Bufficorn', img: 'buffi-bg.png', href: 'https://bufficorn.ventures/' },
 ];
 
