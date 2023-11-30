@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { PropsWithChildren, useEffect, useRef } from 'react';
 import styled from 'styled-components';
@@ -127,7 +128,7 @@ const NavItem = styled.li`
     font-size: 3rem;
     text-transform: uppercase;
     display: block;
-    color: black;
+    color: white;
     text-decoration: none;
     border-radius: 0.5rem;
     padding: 1rem 2rem;
