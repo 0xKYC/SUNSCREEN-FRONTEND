@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { PropsWithChildren, useEffect, useRef } from 'react';
 import styled from 'styled-components';
@@ -6,7 +7,6 @@ import { NavItems } from 'types';
 import ClientOnly from './ClientOnly';
 import CloseIcon from './CloseIcon';
 import OriginalDrawer from './Drawer';
-import Link from 'next/link';
 
 type NavigationDrawerProps = PropsWithChildren<{ items: NavItems }>;
 
@@ -128,7 +128,7 @@ const NavItem = styled.li`
     font-size: 3rem;
     text-transform: uppercase;
     display: block;
-    color: black;
+    color: white;
     text-decoration: none;
     border-radius: 0.5rem;
     padding: 1rem 2rem;

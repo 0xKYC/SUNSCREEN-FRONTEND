@@ -50,10 +50,6 @@ export const Title = styled.h3`
   }
 `;
 
-const CustomOverTitle = styled(OverTitle)`
-  margin-bottom: 2rem;
-`;
-
 const ImageContainer = styled.div`
   flex: 1;
   width: 100%;

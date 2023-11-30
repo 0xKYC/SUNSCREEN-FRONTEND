@@ -1,16 +1,14 @@
 import Head from 'next/head';
 import styled from 'styled-components';
-import { Title } from 'components/BasicSection';
 
+import Button from 'components/Button';
 import Container from 'components/Container';
+import SectionTitle from 'components/SectionTitle';
 import { EnvVars } from 'env';
 
+import BackedBy from 'views/HomePage/BackedBy';
 import Hero from 'views/HomePage/Hero';
 import Newsletter from 'views/HomePage/Newsletter';
-import Button from 'components/Button';
-import Cta from 'views/HomePage/Cta';
-import SectionTitle from 'components/SectionTitle';
-import BackedBy from 'views/HomePage/BackedBy';
 
 export default function Homepage() {
   return (
@@ -41,46 +39,17 @@ export default function Homepage() {
             </Button>
           </Container>
         </WhiteBackgroundContainer>
-        {/* <DarkerBackgroundContainer> */}
-        {/* <Cta /> */}
-        {/* <BasicSectionWrapper> */}
-        {/* </BasicSectionWrapper> */}
-        {/* </DarkerBackgroundContainer> */}
       </HomepageWrapper>
     </>
   );
 }
 
-const Box = styled.div`
-  width: 100%;
-  margin: 0 auto;
-  font-size: 1.5rem;
-  @media screen and (min-width: 1224px) {
-    width: 70%;
-  }
-`;
 const HomepageWrapper = styled.div`
   & > :last-child {
     margin-bottom: 2rem;
   }
 `;
 
-const DarkerBackgroundContainer = styled.div`
-  background: rgb(var(--background));
-  padding-top: 1rem;
-  & > *:not(:first-child) {
-    margin-top: 5rem;
-  }
-`;
-
 const WhiteBackgroundContainer = styled.div`
   background: rgb(var(--secondBackground));
-  /* padding-bottom: 5rem; */
-  /* & > *:not(:first-child) {
-    margin-top: 15rem;
-  } */
-  /* @media screen and (max-width: 1240px) {
-    & > *:not(:first-child) {
-      margin-top: 6rem;
-    } */
 `;
