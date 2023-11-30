@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { animated, useSpring } from 'react-spring';
 import styled from 'styled-components';
 

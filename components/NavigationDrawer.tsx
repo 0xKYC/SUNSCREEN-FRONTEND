@@ -6,7 +6,6 @@ import { NavItems } from 'types';
 import ClientOnly from './ClientOnly';
 import CloseIcon from './CloseIcon';
 import OriginalDrawer from './Drawer';
-import Link from 'next/link';
 
 type NavigationDrawerProps = PropsWithChildren<{ items: NavItems }>;
 
