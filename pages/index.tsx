@@ -11,9 +11,10 @@ import { EnvVars } from 'env';
 import { DiscordGuild, DiscordGuildsProps } from 'types/discord';
 import BackedBy from 'views/HomePage/BackedBy';
 import { DiscordGuilds } from 'views/HomePage/DiscordGuilds';
-import Hero from 'views/HomePage/Hero';
+import Hero, { ImageContainer, VideoFrame } from 'views/HomePage/Hero';
 import Newsletter from 'views/HomePage/Newsletter';
 import { API_URL } from '../constants';
+import ButtonGroup from 'components/ButtonGroup';
 
 const Homepage: NextPage<DiscordGuildsProps> = ({ discordGuilds, totalCount }) => {
   return (
@@ -35,19 +36,35 @@ const Homepage: NextPage<DiscordGuildsProps> = ({ discordGuilds, totalCount }) =
           <DiscordGuilds discordGuilds={discordGuilds} totalCount={totalCount} />
           <Container style={{ textAlign: 'center', marginTop: '10rem' }}>
             <SectionTitle style={{ margin: '4rem 0' }}>Protect your Discord Server</SectionTitle>
-            <Button
-              href="https://discord.com/api/oauth2/authorize?client_id=1169753823397556294&permissions=2415930416&scope=bot"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Add To Discord<span>&rarr;</span>
-            </Button>
+            <CustomButtonGroup>
+              <Button
+                href="https://discord.com/api/oauth2/authorize?client_id=1169753823397556294&permissions=2415930416&scope=bot"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Add To Discord<span>&rarr;</span>
+              </Button>
+              <Button transparent={true} href="https://discord.com/invite/p58hBne2Ue" target="_blank" rel="noreferrer">
+                Join our discord<span>&rarr;</span>
+              </Button>
+            </CustomButtonGroup>
+            <ImageContainer>
+              <VideoFrame src="https://player.vimeo.com/video/884105169?h=0549e91407" />
+            </ImageContainer>
           </Container>
         </WhiteBackgroundContainer>
       </HomepageWrapper>
     </>
   );
 };
+
+const CustomButtonGroup = styled(ButtonGroup)`
+  justify-content: center;
+  margin-bottom: 4rem;
+  @media screen and (min-width: 800px) {
+    margin-bottom: 7rem;
+  }
+`;
 
 const HomepageWrapper = styled.div`
   & > :last-child {

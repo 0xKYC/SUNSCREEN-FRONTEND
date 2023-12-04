@@ -38,7 +38,7 @@ export default function Hero() {
     </HeroWrapper>
   );
 }
-const VideoFrame = styled.iframe`
+export const VideoFrame = styled.iframe`
   position: absolute;
   top: 0;
   right: 0;
@@ -48,7 +48,7 @@ const VideoFrame = styled.iframe`
   height: 100%;
   border: none;
 `;
-const ImageContainer = styled.div`
+export const ImageContainer = styled.div`
   position: relative;
   display: flex;
   flex: 1;
