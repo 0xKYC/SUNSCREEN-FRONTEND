@@ -220,7 +220,11 @@ const InverstorsWrapper = styled.div`
 const Wrapper = styled.div`
   max-width: 1300px;
   margin: 0 auto;
-  padding-bottom: 15rem;
+  padding-bottom: 5rem;
   padding-left: 1rem;
   padding-right: 1rem;
+
+  @media screen and (min-width: 800px) {
+    padding-bottom: 12rem;
+  }
 `;
