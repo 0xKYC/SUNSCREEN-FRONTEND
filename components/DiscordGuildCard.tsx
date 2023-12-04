@@ -6,12 +6,15 @@ export const DiscordGuildCard = ({ guildName, uniqueCount }: DiscordGuild) => {
     <Card>
       <Name>{guildName}</Name>
       <Text>
-        Unique people: <span style={{ color: 'white' }}>{uniqueCount} </span>
+        Unique people: <Span>{uniqueCount} </Span>
       </Text>
     </Card>
   );
 };
 
+const Span = styled.span`
+  color: white;
+`;
 const Name = styled.p`
   font-size: 1.7rem;
   font-weight: 600;

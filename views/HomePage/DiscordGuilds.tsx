@@ -9,7 +9,7 @@ export const DiscordGuilds = ({ discordGuilds, totalCount }: DiscordGuildsProps)
   return (
     <CustomContainer>
       <Title>
-        Already {totalCount.toString()} Discord Servers <br /> protected by <strong style={{ color: '#fb7324' }}>Sunscreen Bot</strong>
+        Already {totalCount.toString()} Discord Servers <br /> protected by <Text>Sunscreen Bot</Text>
       </Title>
       <AutofitGrid>
         {discordGuilds.map((guild) => {
@@ -25,6 +25,10 @@ export const DiscordGuilds = ({ discordGuilds, totalCount }: DiscordGuildsProps)
     </CustomContainer>
   );
 };
+
+const Text = styled.strong`
+  color: #fb7324;
+`;
 const CustomContainer = styled(Container)`
   text-align: center;
   margin-top: 5rem;
