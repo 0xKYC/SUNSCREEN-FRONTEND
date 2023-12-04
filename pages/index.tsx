@@ -1,3 +1,5 @@
+import axios from 'axios';
+import { GetStaticProps, NextPage } from 'next';
 import Head from 'next/head';
 import styled from 'styled-components';
 
@@ -6,11 +8,14 @@ import Container from 'components/Container';
 import SectionTitle from 'components/SectionTitle';
 import { EnvVars } from 'env';
 
+import { DiscordGuild, DiscordGuildsProps } from 'types/discord';
 import BackedBy from 'views/HomePage/BackedBy';
+import { DiscordGuilds } from 'views/HomePage/DiscordGuilds';
 import Hero from 'views/HomePage/Hero';
 import Newsletter from 'views/HomePage/Newsletter';
+import { API_URL } from '../constants';
 
-export default function Homepage() {
+const Homepage: NextPage<DiscordGuildsProps> = ({ discordGuilds, totalCount }) => {
   return (
     <>
       <Head>
@@ -27,7 +32,7 @@ export default function Homepage() {
               for our onchain attestation technology.
             </p>
           </Newsletter>
-
+          <DiscordGuilds discordGuilds={discordGuilds} totalCount={totalCount} />
           <Container style={{ textAlign: 'center', marginTop: '10rem' }}>
             <SectionTitle style={{ margin: '4rem 0' }}>Protect your Discord Server</SectionTitle>
             <Button
@@ -42,7 +47,7 @@ export default function Homepage() {
       </HomepageWrapper>
     </>
   );
-}
+};
 
 const HomepageWrapper = styled.div`
   & > :last-child {
@@ -53,3 +58,22 @@ const HomepageWrapper = styled.div`
 const WhiteBackgroundContainer = styled.div`
   background: rgb(var(--secondBackground));
 `;
+
+export default Homepage;
+
+export const getStaticProps: GetStaticProps = async () => {
+  const res = await axios.get<DiscordGuild[]>(API_URL + 'discordBot/guilds');
+  const discordGuildsData = res.data;
+  const resultLimit = 6;
+  const guildsWithMostUniquePeople = discordGuildsData.sort((a, b) => b.uniqueCount - a.uniqueCount);
+
+  const discordGuilds = guildsWithMostUniquePeople.slice(0, resultLimit);
+
+  return {
+    props: {
+      totalCount: discordGuildsData.length,
+      discordGuilds,
+    },
+    revalidate: 43200,
+  };
+};

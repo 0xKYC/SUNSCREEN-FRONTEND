@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Container = styled.div`
+const Container = styled.section`
   position: relative;
   max-width: 120em;
   width: 100%;
