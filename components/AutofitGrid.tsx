@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const AutofitGrid = styled.div`
-  background-color: rgb(251, 251, 253);
-
   -webkit-box-shadow: 2px -1px 25px 1px rgba(251, 115, 36, 1);
   -moz-box-shadow: 2px -1px 25px 1px rgba(251, 115, 36, 1);
   box-shadow: 2px -1px 25px 1px rgba(251, 115, 36, 1);
@@ -10,10 +8,10 @@ export const AutofitGrid = styled.div`
   border-radius: 1rem;
   --autofit-grid-item-size: 30rem;
 
-  grid-gap: 4rem;
+  grid-gap: 2.5rem;
   grid-template-columns: repeat(auto-fit, minmax(var(--autofit-grid-item-size), 1fr));
   margin: 6rem auto;
-  padding: 3rem;
+  padding: 2rem;
 
   display: none;
   @media screen and (min-width: 1080px) {
