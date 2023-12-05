@@ -9,6 +9,8 @@ import { EnvVars } from 'env';
 import BackedBy from 'views/HomePage/BackedBy';
 import Hero from 'views/HomePage/Hero';
 import Newsletter from 'views/HomePage/Newsletter';
+import Features from 'views/HomePage/Features';
+import ProductInformation from 'views/HomePage/ProductInformation';
 
 export default function Homepage() {
   return (
@@ -27,7 +29,7 @@ export default function Homepage() {
               for our onchain attestation technology.
             </p>
           </Newsletter>
-
+          <ProductInformation />
           <Container style={{ textAlign: 'center', marginTop: '10rem' }}>
             <SectionTitle style={{ margin: '4rem 0' }}>Protect your Discord Server</SectionTitle>
             <Button
