@@ -1,22 +1,19 @@
-import NextImage from 'next/image';
 import styled from 'styled-components';
 import { media } from 'utils/media';
 
 
 interface ProductInformationCardProps {
-  gridType: number;
   title: string;
   description: string;
   imageUrl: string;
 }
 
-export default function ProductInformationCard({ gridType, title, description, imageUrl }: ProductInformationCardProps) {
+export default function ProductInformationCard({ title, description, imageUrl }: ProductInformationCardProps) {
   return (
     <Card>
        <Image 
             src={imageUrl} 
             alt={title} 
-            // gridType={gridType}
         />        
         <Title>{title}</Title>
         <Description>{description}</Description>
