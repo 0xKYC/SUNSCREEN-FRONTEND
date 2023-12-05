@@ -25,7 +25,6 @@ export default function ProductInformationCard({ gridType, title, description, i
 }
 
 export const Card = styled.div`
-  position: relative;
   display: grid;
   justify-items: center;
   gap: 2rem;
@@ -34,21 +33,22 @@ export const Card = styled.div`
   box-shadow: var(--shadow-lg);
   width: 100%;
   border-radius: 0.6rem;
+  box-sizing: border-box;
+  overflow: hidden;
   color: rgb(var(--text));
   font-size: 1.6rem;
   ${media('>tablet')} {
       grid-template-rows: auto auto;
       grid-template-columns: 25% 75%;
+      column-gap: 0;
   }
 `;
 
 const Image = styled.img`
     width: 128px;
     height: 128px;
-    ${media('>tablet')} {
-        /* grid-column: ${({ cardKey }) => (cardKey === 0 ? '1' : '2')};     */
-        /* grid-row: 2; */
-    }
+    min-width: 0;
+    min-height: 0;
 `
 
 const Title = styled.div`
@@ -63,6 +63,4 @@ const Title = styled.div`
 const Description = styled.p`
   opacity: 0.6;
   min-height: 40%;
-   ${media('>tablet')} {
-    }
 `;
