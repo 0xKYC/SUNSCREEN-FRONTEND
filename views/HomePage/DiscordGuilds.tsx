@@ -9,7 +9,7 @@ export const DiscordGuilds = ({ discordGuilds, totalCount }: DiscordGuildsProps)
   return (
     <CustomContainer>
       <Title>
-        Already {totalCount.toString()} Discord Servers <br /> protected by <Text>Sunscreen Bot</Text>
+        Over {totalCount.toString()} Discord Servers <br /> are protected by <Text>Sunscreen Bot</Text>
       </Title>
       <AutofitGrid>
         {discordGuilds.map((guild) => {

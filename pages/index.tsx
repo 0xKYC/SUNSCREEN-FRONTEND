@@ -35,14 +35,15 @@ const Homepage: NextPage<DiscordGuildsProps> = ({ discordGuilds, totalCount }) =
           </Newsletter>
           <DiscordGuilds discordGuilds={discordGuilds} totalCount={totalCount} />
           <Container style={{ textAlign: 'center', marginTop: '10rem' }}>
-            <SectionTitle style={{ margin: '4rem 0' }}>Protect your Discord Server</SectionTitle>
+            <SectionTitle style={{ margin: '4rem 0 2rem 0' }}>Protect your Discord Server</SectionTitle>
+            <Text>Sunscreen is a Discord bot that verifies uniqueness of individuals on the basis of facial biometrics</Text>
             <CustomButtonGroup>
               <Button
                 href="https://discord.com/api/oauth2/authorize?client_id=1169753823397556294&permissions=2415930416&scope=bot"
                 target="_blank"
                 rel="noreferrer"
               >
-                Add To Discord<span>&rarr;</span>
+                Add Sunscreen to your server<span>&rarr;</span>
               </Button>
               <Button transparent={true} href="https://discord.com/invite/p58hBne2Ue" target="_blank" rel="noreferrer">
                 Join our discord<span>&rarr;</span>
@@ -75,7 +76,10 @@ const HomepageWrapper = styled.div`
 const WhiteBackgroundContainer = styled.div`
   background: rgb(var(--secondBackground));
 `;
-
+const Text = styled.p`
+  font-size: 1.7rem;
+  margin-bottom: 5rem;
+`;
 export default Homepage;
 
 export const getStaticProps: GetStaticProps = async () => {
