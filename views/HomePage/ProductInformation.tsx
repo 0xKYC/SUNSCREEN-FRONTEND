@@ -51,7 +51,7 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    gap: 4rem;
     max-width: 120em;
     width: 100%;
     margin: 0 auto;

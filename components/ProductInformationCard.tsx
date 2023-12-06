@@ -51,11 +51,11 @@ export const Card = styled.div`
   justify-items: center;
   text-align: center;
   gap: 2rem;
-  padding: 5rem 4rem;
+  padding: 5.5rem 4rem;
   background: rgb(var(--cardBackground));
   box-shadow: var(--shadow-lg);
   width: 90%;
-  border-radius: 2rem;
+  border-radius: 1rem;
   color: rgb(var(--text));
   font-size: 1.8rem;
   ${media('>tablet')} {
