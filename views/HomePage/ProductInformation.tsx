@@ -66,7 +66,7 @@ const Container = styled.div`
             "secondDescription image";
             gap: 0;
             grid-template-rows: auto auto auto;
-            grid-template-columns: 1.2fr 1fr;
+            grid-template-columns: 1.3fr 1fr;
             row-gap: 1.2rem;
         }
     }
