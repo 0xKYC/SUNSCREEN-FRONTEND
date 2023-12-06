@@ -21,7 +21,7 @@ export default function ProductInformationCard({ title, description, secondDescr
           alt={title} 
           />        
           <Title>{title}</Title>  
-          <Description>{description}</Description>
+          <Description><span>{description}</span></Description>
           </>
           :
           <>
@@ -32,13 +32,13 @@ export default function ProductInformationCard({ title, description, secondDescr
           <Title>{title}</Title>
           <Description>
             <UniqueTag>{role1}</UniqueTag>
-            {description}
+            <span>{description}</span>
           </Description> 
           <Description>
             <VerifiedTag>
               {role2}
             </VerifiedTag>
-            {secondDescription}
+            <span>{secondDescription}</span>
           </Description>
           </>
         }
@@ -65,7 +65,7 @@ export const Card = styled.div`
     gap: 0;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr;
-    row-gap: 1rem;
+    row-gap: 1.2rem;
     column-gap: 2rem;
   }
 `;
@@ -86,6 +86,7 @@ const Image = styled.img`
 const Title = styled.div`
     font-weight: bold;
     font-size: 2.3rem;
+    margin-bottom: .2rem;
     ${media('>tablet')} {
         grid-area: "title";
         place-self: center start;
@@ -94,13 +95,15 @@ const Title = styled.div`
 `;
 
 const Description = styled.p`
-  opacity: 0.7;
   min-height: 40%;
   line-height: 1.6;
   ${media('>tablet')} {
     text-align: left;
     grid-area: description;
-}
+  }
+  > :last-child{
+    opacity: 0.6;
+  }
 `;
 
 const UniqueTag = styled.span`
