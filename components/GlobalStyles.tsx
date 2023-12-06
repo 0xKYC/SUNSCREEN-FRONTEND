@@ -42,7 +42,7 @@ export const GlobalStyle = createGlobalStyle`
   --primary: 35,41,96;
   --secondary:10,18,30;
   --tertiary: 231,241,251;
-  --cardBackground: 45,55,72;
+  --cardBackground: 28,31,35;
   --inputBackground: 45,55,72;
   --navbarBackground: 18, 18, 18;
   --modalBackground: 26,32,44;
@@ -55,7 +55,7 @@ export const GlobalStyle = createGlobalStyle`
   --secondBackground: 45,55,72;
   --text: 237,237,238;
   --textSecondary: 255,255,255;
-   --primary: 251,115,36;
+  --primary: 251,115,36;
   --secondary: 10,18,30;
   --tertiary: 231,241,251;
   --cardBackground: 45,55,72;
