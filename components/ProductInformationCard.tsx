@@ -51,11 +51,11 @@ export const Card = styled.div`
   justify-items: center;
   text-align: center;
   gap: 2rem;
-  padding: 3rem 4rem;
+  padding: 5rem 4rem;
   background: rgb(var(--cardBackground));
   box-shadow: var(--shadow-lg);
-  width: 100%;
-  border-radius: 1rem;
+  width: 90%;
+  border-radius: 2rem;
   color: rgb(var(--text));
   font-size: 1.8rem;
   ${media('>tablet')} {
@@ -74,8 +74,8 @@ const Image = styled.img`
     width: 128px;
     height: 128px;
     ${media('>tablet')} {
-      width: 220px;
-      height: 220px;
+      width: 250px;
+      height: 250px;
       grid-area: image;
       justify-self: center;
       align-self: center;
