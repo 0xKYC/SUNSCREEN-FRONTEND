@@ -114,7 +114,10 @@ const UniqueTag = styled.span`
   max-width: max-content;
   padding: .3rem;
   margin-right: 2px;
+
+  // Sunscreen orange undershadow
   // box-shadow: 0px 0px 3px #FB7324;
+
   box-shadow: 0px 0px 7px rgba(255, 0, 0, 0.5);
 `;
 const VerifiedTag = styled.span`
@@ -125,6 +128,42 @@ const VerifiedTag = styled.span`
   max-width: max-content;
   padding: 0.3rem;
   margin-right: 2px;
+
+  // Sunscreen orange undershadow
   // box-shadow: 0px 0px 4px #FB7324;
+
   box-shadow: 0px 0px 4px rgba(0, 255, 0, 0.5);
 `;
+
+// Discord tag version with blue and grey colorscheme options
+// const UniqueTag = styled.span`
+//   color: rgb(var(--text));
+//   font-size: 1.8rem;
+
+//   // Discord Blue
+//   background: rgba(78, 90, 240, 1);
+
+//   // Discord Grey
+//   background: rgba(69, 70, 78, 1); 
+
+//   border-radius: .5rem;
+//   max-width: max-content;
+//   padding: .3rem;
+//   margin-right: 2px;
+// `;
+// const VerifiedTag = styled.span`
+//   color: rgb(var(--text));
+//   font-size: 1.8rem;
+
+//   // Discord Blue
+//   background: rgba(78, 90, 240, 1);
+
+//   // Discord Grey
+//   background: rgba(69, 70, 78, 1); 
+
+//   border-radius: 0.5rem;
+//   max-width: max-content;
+//   padding: 0.3rem;
+//   margin-right: 2px;
+// `;
+
