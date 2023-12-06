@@ -13,6 +13,7 @@ import BackedBy from 'views/HomePage/BackedBy';
 import { DiscordGuilds } from 'views/HomePage/DiscordGuilds';
 import Hero, { ImageContainer, VideoFrame } from 'views/HomePage/Hero';
 import Newsletter from 'views/HomePage/Newsletter';
+import ProductInformation from 'views/HomePage/ProductInformation';
 import { API_URL } from '../constants';
 import ButtonGroup from 'components/ButtonGroup';
 
@@ -33,6 +34,7 @@ const Homepage: NextPage<DiscordGuildsProps> = ({ discordGuilds, totalCount }) =
               for our onchain attestation technology.
             </p>
           </Newsletter>
+          <ProductInformation />
           <DiscordGuilds discordGuilds={discordGuilds} totalCount={totalCount} />
           <Container style={{ textAlign: 'center', marginTop: '10rem' }}>
             <SectionTitle style={{ margin: '4rem 0 2rem 0' }}>Protect your Discord Server</SectionTitle>

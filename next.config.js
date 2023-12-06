@@ -11,7 +11,7 @@ module.exports = withBundleAnalyzer({
       {
         protocol: 'https',
         hostname: 'cdn-images-1.medium.com',
-        port: '',
+        port: '8080',
         pathname: '/max/1024/**',
       },
     ],
