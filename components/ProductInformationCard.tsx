@@ -51,7 +51,7 @@ export const Card = styled.div`
   justify-items: center;
   text-align: center;
   gap: 2rem;
-  padding: 3rem;
+  padding: 3rem 4rem;
   background: rgb(var(--cardBackground));
   box-shadow: var(--shadow-lg);
   width: 100%;
@@ -64,7 +64,7 @@ export const Card = styled.div`
     "image description";
     gap: 0;
     grid-template-rows: auto auto;
-    grid-template-columns: 1fr 1.3fr;
+    grid-template-columns: 1fr 1fr;
     row-gap: 1rem;
     column-gap: 2rem;
   }
@@ -74,8 +74,8 @@ const Image = styled.img`
     width: 128px;
     height: 128px;
     ${media('>tablet')} {
-      width: 196px;
-      height: 196px;
+      width: 220px;
+      height: 220px;
       grid-area: image;
       justify-self: center;
       align-self: center;
@@ -89,6 +89,7 @@ const Title = styled.div`
     ${media('>tablet')} {
         grid-area: "title";
         place-self: center start;
+        text-align: left;
     }
 `;
 

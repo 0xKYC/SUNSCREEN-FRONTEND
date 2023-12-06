@@ -20,7 +20,7 @@ const ProductData = [
     },
     {
         imageUrl: "/grid-icons/version_control.svg",
-        title: "Integration with Zealy & Galaxe: Enhancing Bot Functionality",
+        title: "Integration with Zealy and Galaxe: Enhancing Bot Functionality",
         description: "Seamlessly integrate with bots like Zealy or Galaxe. Use our 'required role' feature to allow only unique and verified users to access specific rewards. This integration empowers you to create a more secure and exclusive community experience."
     }
 ]
@@ -51,7 +51,7 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
     max-width: 120em;
     width: 100%;
     margin: 0 auto;
@@ -66,7 +66,7 @@ const Container = styled.div`
             "secondDescription image";
             gap: 0;
             grid-template-rows: auto auto auto;
-            grid-template-columns: 1.3fr 1fr;
+            grid-template-columns: 1fr 1fr;
             row-gap: 1.2rem;
         }
     }
