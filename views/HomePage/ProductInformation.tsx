@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import ProductInformationCard from 'components/ProductInformationCard';
 import { media } from 'utils/media';
 import * as Drawer from '@accessible/drawer';
+import NextImage from 'next/image';
 import { useState } from 'react';
 
 const ProductImage = [
@@ -68,7 +69,7 @@ export default function ProductInformation() {
         <Container>
             <Title>How Sunscreen Works</Title>
             <ContentContainer>
-                <img src={currentImage} alt="Product" />
+                <NextImage>{currentImage}</NextImage>
 
                 <DrawerContainer>
                     {ProductData.map((data, index) => (
