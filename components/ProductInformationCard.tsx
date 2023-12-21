@@ -51,14 +51,18 @@ export const Card = styled.div`
   justify-items: center;
   text-align: center;
   gap: 2rem;
-  padding: 5.5rem 4rem;
+  padding: 5.5rem 1.5rem;
   background: rgb(var(--cardBackground));
   box-shadow: var(--shadow-lg);
-  width: 90%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  
   border-radius: 1rem;
   color: rgb(var(--text));
   font-size: 1.8rem;
   ${media('>tablet')} {
+    padding: 5.5rem 4rem;
     grid-template-areas:
     "image title"
     "image description";
@@ -135,35 +139,4 @@ const VerifiedTag = styled.span`
   box-shadow: 0px 0px 4px rgba(0, 255, 0, 0.5);
 `;
 
-// Discord tag version with blue and grey colorscheme options
-// const UniqueTag = styled.span`
-//   color: rgb(var(--text));
-//   font-size: 1.8rem;
-
-//   // Discord Blue
-//   background: rgba(78, 90, 240, 1);
-
-//   // Discord Grey
-//   background: rgba(69, 70, 78, 1); 
-
-//   border-radius: .5rem;
-//   max-width: max-content;
-//   padding: .3rem;
-//   margin-right: 2px;
-// `;
-// const VerifiedTag = styled.span`
-//   color: rgb(var(--text));
-//   font-size: 1.8rem;
-
-//   // Discord Blue
-//   background: rgba(78, 90, 240, 1);
-
-//   // Discord Grey
-//   background: rgba(69, 70, 78, 1); 
-
-//   border-radius: 0.5rem;
-//   max-width: max-content;
-//   padding: 0.3rem;
-//   margin-right: 2px;
-// `;
 
